@@ -104,8 +104,94 @@
 
 // |-------------------------------------Arrow functions------------------------------------------|
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const newArr = arr.map(item => item * 2)
+// const newArr = arr.map(item => item * 2)
 
-console.log(newArr)
+// console.log(newArr)
+
+// |-------------------------------------Desestruturação------------------------------------------|
+
+// const usuario = {
+//     nome: "Vinicius",
+//     idade: 20,
+//     endereço: {
+//         cidade: "Bragança Paulista",
+//         estado: "SP"
+//     },
+// };
+
+// const  {nome, idade, endereço: { cidade }} = usuario;
+
+// function MostraNome ({ nome, idade }) {
+//     console.log(idade, nome)
+// }
+// MostraNome(usuario)
+
+// console.log(usuario);
+// console.log(nome);
+// console.log(idade);
+// console.log(cidade);
+
+// |-------------------------------------Rest/Spread------------------------------------------|
+
+//REST
+
+// const usuario = {
+//     nome: "Vinicius",
+//     idade: 20,
+//     endereço: {
+//         cidade: "Bragança Paulista",
+//         estado: "SP"
+//     },
+// };
+
+// const {nome, ...resto} = usuario;
+
+// console.log(nome);
+// console.log(resto);
+
+// //REST  em vetores
+
+// const Arr = [1, 2, 3, 4, 5, 6];
+
+// const [a, b, ...c] = Arr ;
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// //REST  para parametros de função
+
+// function soma (...params) {
+//     return params.reduce((total, next) => total + next);
+// }
+
+// console.log(soma( 1, 2, 3, 4, 5));
+
+
+
+//SPREAD
+
+//armazenar 2 arrays em somente 1 
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+
+// const arr3 = [...arr1, ...arr2];
+
+// console.log(arr3)
+
+
+//mudar uma informação do array
+
+// const usuario = {
+//     nome: "Vinicius",
+//     idade: 20,
+//     empresa: "RocketSeat"
+// };
+
+// const usuario1 =  {...usuario, nome:"Gabriel" };
+
+// console.log(usuario1)
+
