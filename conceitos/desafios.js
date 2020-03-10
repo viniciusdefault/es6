@@ -15,7 +15,7 @@ console.log(Adm1.isAdmin()) // true
 
 class admin {
     constructor () {
-        this.n
+       
     }
 }
 

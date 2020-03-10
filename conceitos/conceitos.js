@@ -1,4 +1,3 @@
-
 // |------------------------------classes-------------------------------------|
 
 // class List {
@@ -194,4 +193,3 @@
 // const usuario1 =  {...usuario, nome:"Gabriel" };
 
 // console.log(usuario1)
-
