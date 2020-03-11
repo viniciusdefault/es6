@@ -1,59 +1,59 @@
 // |------------------------------classes-------------------------------------|
 
-// class List {
-//     constructor() {
-//         this.data = [];
-//     }
-//     add(data) {
-//         this.data.push(data);
-//         console.log(this.data)
-//     }
-// }
-// class TodoList extends List {
-//     constructor() {
-//         super();
+class List {
+    constructor() {
+        this.data = [];
+    }
+    add(data) {
+        this.data.push(data);
+        console.log(this.data)
+    }
+}
+class TodoList extends List {
+    constructor() {
+        super();
 
-//         this.usuario = "ronaldinho";
+        this.usuario = "ronaldinho";
         
-//     }
-//     MostraUsuario() {
-//         console.log(this.usuario)
-//     }    
-// }
+    }
+    MostraUsuario() {
+        console.log(this.usuario)
+    }    
+}
 
-// const minhaLista = new TodoList();
+const minhaLista = new TodoList();
 
-// document.querySelector(".newtodo").onclick = function () {
-//     minhaLista.add("novo todo");
-// }
+document.querySelector(".newtodo").onclick = function () {
+    minhaLista.add("novo todo");
+}
 
-// minhaLista.MostraUsuario();
+minhaLista.MostraUsuario();
 
 
 // |------------------------------classes estaticas---------------------------|
 
-// class Matematica {
+class Matematica {
 
-//     static soma (a, b) {
-//         return a  + b ;
-//     }
-// }
+    static soma (a, b) {
+        return a  + b ;
+    }
+}
 
-// console.log( Matematica.soma( 1, 2 ));
+console.log( Matematica.soma( 1, 2 ));
 
 // |------------------------------operações em vetores com js es6+-------------------------------|
 
-// let arr = [1, 2, 3, 4, 5, 6]
+let arr = [1, 2, 3, 4, 5, 6]
 
 
-// const newArr = arr.map(function(item, index) {
-//     return item + index ;
-// })
-// console.log(newArr)
+const newArr = arr.map(function(item, index) {
+    return item + index ;
+})
+console.log(newArr)
 
-// const  sum = arr.reduce(function(total, next) {
-//     return total + next;
-// })
+const  sum = arr.reduce(function(total, next) {
+    return total + next;
+})
 
 // |---------------------iteraçoes do reduce-------------------------|
 
@@ -86,87 +86,87 @@
 
 
 
-// console.log(sum)
+console.log(sum)
 
-// const filter = arr.filter(function(item) {
-//     return item % 2 === 0; 
-// })
+const filter = arr.filter(function(item) {
+    return item % 2 === 0; 
+})
 
-// console.log(filter)
+console.log(filter)
 
-// const find = arr.find(function(item) {
-//     return item === 4; 
-// })
+const find = arr.find(function(item) {
+    return item === 4; 
+})
 
-// console.log(find)
+console.log(find)
 
 
 // |-------------------------------------Arrow functions------------------------------------------|
 
-// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// const newArr = arr.map(item => item * 2)
+const newArr = arr.map(item => item * 2)
 
-// console.log(newArr)
+console.log(newArr)
 
 // |-------------------------------------Desestruturação------------------------------------------|
 
-// const usuario = {
-//     nome: "Vinicius",
-//     idade: 20,
-//     endereço: {
-//         cidade: "Bragança Paulista",
-//         estado: "SP"
-//     },
-// };
+const usuario = {
+    nome: "Vinicius",
+    idade: 20,
+    endereço: {
+        cidade: "Bragança Paulista",
+        estado: "SP"
+    },
+};
 
-// const  {nome, idade, endereço: { cidade }} = usuario;
+const  {nome, idade, endereço: { cidade }} = usuario;
 
-// function MostraNome ({ nome, idade }) {
-//     console.log(idade, nome)
-// }
-// MostraNome(usuario)
+function MostraNome ({ nome, idade }) {
+    console.log(idade, nome)
+}
+MostraNome(usuario)
 
-// console.log(usuario);
-// console.log(nome);
-// console.log(idade);
-// console.log(cidade);
+console.log(usuario);
+console.log(nome);
+console.log(idade);
+console.log(cidade);
 
 // |-------------------------------------Rest/Spread------------------------------------------|
 
 //REST
 
-// const usuario = {
-//     nome: "Vinicius",
-//     idade: 20,
-//     endereço: {
-//         cidade: "Bragança Paulista",
-//         estado: "SP"
-//     },
-// };
+const usuario = {
+    nome: "Vinicius",
+    idade: 20,
+    endereço: {
+        cidade: "Bragança Paulista",
+        estado: "SP"
+    },
+};
 
-// const {nome, ...resto} = usuario;
+const {nome, ...resto} = usuario;
 
-// console.log(nome);
-// console.log(resto);
+console.log(nome);
+console.log(resto);
 
-// //REST  em vetores
+//REST  em vetores
 
-// const Arr = [1, 2, 3, 4, 5, 6];
+const Arr = [1, 2, 3, 4, 5, 6];
 
-// const [a, b, ...c] = Arr ;
+const [a, b, ...c] = Arr ;
 
-// console.log(a)
-// console.log(b)
-// console.log(c)
+console.log(a)
+console.log(b)
+console.log(c)
 
 // //REST  para parametros de função
 
-// function soma (...params) {
-//     return params.reduce((total, next) => total + next);
-// }
+function soma (...params) {
+    return params.reduce((total, next) => total + next);
+}
 
-// console.log(soma( 1, 2, 3, 4, 5));
+console.log(soma( 1, 2, 3, 4, 5));
 
 
 
@@ -174,22 +174,22 @@
 
 //armazenar 2 arrays em somente 1 
 
-// const arr1 = [1, 2, 3];
-// const arr2 = [4, 5, 6];
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
 
-// const arr3 = [...arr1, ...arr2];
+const arr3 = [...arr1, ...arr2];
 
-// console.log(arr3)
+console.log(arr3)
 
 
 //mudar uma informação do array
 
-// const usuario = {
-//     nome: "Vinicius",
-//     idade: 20,
-//     empresa: "RocketSeat"
-// };
+const usuario = {
+    nome: "Vinicius",
+    idade: 20,
+    empresa: "RocketSeat"
+};
 
-// const usuario1 =  {...usuario, nome:"Gabriel" };
+const usuario1 =  {...usuario, nome:"Gabriel" };
 
-// console.log(usuario1)
+console.log(usuario1)
