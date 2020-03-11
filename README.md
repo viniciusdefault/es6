@@ -6,3 +6,6 @@
 
 # Babel
 - o babel pega o codigo escrito em versões mais antigas ou atuais e transpila para um formato que todos os navegadores possam entender
+
+# webpack 
+- um bundle de arquivos web que auxilia na criação de projetos web
